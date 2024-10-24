@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GF/BF Rent Form</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Rent a GF/BF</h2>
+        <h4>Made by Mark Vincent Domingo</h4>
+        <form id="rentForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="genderPreference">Gender Preference:</label>
+                <select id="genderPreference" name="genderPreference" required>
+                    <option value="" disabled selected>Select Preference</option>
+                    <option value="girlfriend">Girlfriend</option>
+                    <option value="boyfriend">Boyfriend</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="duration">Duration (in hours):</label>
+                <input type="number" id="duration" name="duration" min="1" placeholder="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="specialRequests">Special Requests:</label>
+                <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any preferences or requests..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="+1 234 567 890" required>
+            </div>
+
+            <button type="submit">Submit Request</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+
+    <script src="Script1.js"></script>
+</body>
+</html>
